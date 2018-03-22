@@ -1,0 +1,47 @@
+*{
+	padding: 0px;
+	margin :0px;
+	font-family: sans-serif;
+}
+body{
+	background-color: #4267b2;
+}
+.konten{
+	background: #1da1f2;
+	width: 350px;
+	margin: 222px auto 0;
+	border-radius: 16px;
+	height: 256px;
+	overflow: hidden;
+}
+.kepala{
+	background: #4d62ff;
+	padding: 10px ;
+	height: 60px;
+}
+.judul{
+    color: #fff;
+    font-weight: normal;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.paraf{
+	color: :#fff;
+	font-size:10px;
+}
+.lock{
+	background-image: url("lock.png");
+	background-position: center;
+	background-size: 38px;
+	display:  inline-block;
+	width: 25px;
+	height: 25px;
+	margin-top: 8px;
+	float: left;
+	margin-right: 10px;
+}
+.artikel{
+	padding: 10px 22px 0;
+	color: #f6f6f6;
+}
