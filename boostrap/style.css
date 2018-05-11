@@ -1,0 +1,54 @@
+.header{
+	background:#0000cc;
+	width: 100%;
+	height: 120px;
+	margin: 0 auto;
+}
+.header h1{
+	text-align: right;
+	margin-right: 20px;
+	font-family: verdana;
+}
+.header small{
+	font-size: 50%
+	border-bottom: 1px solid #660000;
+	text-align: right;
+}
+
+.menu{
+ background: #cc4400;
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+	border-top: 1px solid #000;
+	text-align: center;
+}
+.menu ul li { 
+	display: inline;
+}
+.menu ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-family: arial;
+	margin: 0 20px;
+}
+.menu a:hover{
+	background-color:#802b00; 
+
+}
+.conten{
+background: #ac7339;
+	margin: 0 auto
+	width:900;
+	height: 400px;
+}
+.subc{
+	background: #fff;
+	height: 380px;
+	width: 315px;
+	float: left;
+	margin: 5px;
+	border-radius: 10px;
+
+
+}
