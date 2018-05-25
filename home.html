@@ -13,19 +13,39 @@
   	app.config(function($routeProvider){
   		 $routeProvider
     .when("/", {
-        templateUrl : "main.htm"
+        templateUrl : "main.htm", controller:"mainCtrl"
+       
     })
     .when("/about",{
     	templateUrl : "about.htm"
     })
   	});
+        app.controller('weatherCtrl',function($scope,$http)
+      $http.get('http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22')
+      .then(function(response){
+        $scope.info =response.data;
+      })
+    });
+    app.controller('homeCtrl',function($scope){
+      $scope.title = "welcome";
+    })
+
+    app.controller('mainCtrl', function($scope){
+      $scope.text1 =" this is paragraf 1"
+      $scope.text2 =" this is paragraf 2"
+      $scope.text3 =" this is paragraf 3"
+    })
+
+
+
+
   </script>
   </head>
   <body>
-  	<div ng-app="myApp" class="container">
+  	<div ng-app="myApp" ng-controller="homeCtrl",  class="container">
 	<div class="row">
 		<div class="col-md-12 header">
-			<h1>Titel of web</h1>
+			<h1>{{title }}</h1>
 	</div>
 	</div>	
 		<div class="row">
